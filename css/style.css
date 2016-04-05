@@ -18,3 +18,14 @@ header form {
   width: 40px;
   margin-right: 5px;
 }
+
+.friends li {
+  list-style: none;
+  display: inline;
+  padding: 5px;
+  float: left;
+}
+
+.friends img {
+  width: 55px;
+}
