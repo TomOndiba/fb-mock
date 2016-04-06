@@ -94,3 +94,10 @@ header form {
 .groups img {
   max-width: 100%;
 }
+
+.group-item {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  overflow: auto;
+}
