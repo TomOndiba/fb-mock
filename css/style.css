@@ -52,6 +52,16 @@ header form {
   top: 50%;
 }
 
+.comment-form .form-group {
+  width: 90%;
+}
+
+.comment-form input[type="text"] {
+  width: 100%;
+  height: 75px;
+  margin-bottom: 10px;
+}
+
 .comment-avatar img {
   width: 40px;
   margin-right: 5px;
