@@ -101,3 +101,14 @@ header form {
   border-bottom: 1px solid #ccc;
   overflow: auto;
 }
+
+footer {
+  background: #f4f4f4;
+  height: 60px;
+  color: #04519b;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 15px;
+  border-top: 5px solid #04519b;
+}
