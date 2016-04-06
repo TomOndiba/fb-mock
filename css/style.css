@@ -79,7 +79,7 @@ header form {
 .friends li {
   list-style: none;
   display: inline;
-  padding: 5px;
+  padding: 0 10px 0 10px;
   float: left;
 }
 
