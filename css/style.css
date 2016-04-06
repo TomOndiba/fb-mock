@@ -87,12 +87,10 @@ header form {
   width: 55px;
 }
 
-.groups {
-
-}
-
 .groups img {
-  max-width: 100%;
+  width: 80px;
+  float: left;
+  margin-right: 15px;
 }
 
 .group-item {
