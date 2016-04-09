@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="ekko-lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Photos</title>
   </head>
@@ -61,12 +62,12 @@
           <div class="col-md-8">
             <h1 class="page-header">Photos</h1>
             <ul class="photos gallery-parent">
-              <li><img src="img/gallery/sample1.jpg" class="img-thumbnail"></img></li>
-              <li><img src="img/gallery/sample2.jpg" class="img-thumbnail"></img></li>
-              <li><img src="img/gallery/sample3.jpg" class="img-thumbnail"></img></li>
-              <li><img src="img/gallery/sample4.jpg" class="img-thumbnail"></img></li>
-              <li><img src="img/gallery/sample5.jpg" class="img-thumbnail"></img></li>
-              <li><img src="img/gallery/sample6.jpg" class="img-thumbnail"></img></li>
+              <li><a href="img/gallery/sample1.jpg" data-toggle="lightbox" data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="An eagle doing its thing."><img src="img/gallery/sample1.jpg" class="img-thumbnail"></img></a></li>
+              <li><a href="img/gallery/sample2.jpg" data-toggle="lightbox" data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="Some colorful tubes."><img src="img/gallery/sample2.jpg" class="img-thumbnail"></img></a></li>
+              <li><a href="img/gallery/sample3.jpg" data-toggle="lightbox" data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="Park benches."><img src="img/gallery/sample3.jpg" class="img-thumbnail"></img></a></li>
+              <li><a href="img/gallery/sample4.jpg" data-toggle="lightbox" data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="Sunflower in bloom."><img src="img/gallery/sample4.jpg" class="img-thumbnail"></img></a></li>
+              <li><a href="img/gallery/sample5.jpg" data-toggle="lightbox" data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="Umbrella top."><img src="img/gallery/sample5.jpg" class="img-thumbnail"></img></a></li>
+              <li><a href="img/gallery/sample6.jpg" data-toggle="lightbox" data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="Have you lost your marbles?"><img src="img/gallery/sample6.jpg" class="img-thumbnail"></img></a></li>
             </ul>
           </div><!--end of col-md-8-->
 
@@ -132,5 +133,16 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/ekko-lightbox.min.js"></script>
+    <script>
+      $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+
+      $(function () {
+        $('[data-hover="tooltip"]').tooltip()
+      });
+    </script>
   </body>
 </html>
