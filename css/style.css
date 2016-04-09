@@ -1,10 +1,10 @@
+/* header */
 header {
   background-image: linear-gradient(#04519b, #044687 60%, #033769);
   color: #fff;
   min-height: 100px;
   padding-top: 30px;
 }
-
 header form {
   float: right;
 }
@@ -14,6 +14,7 @@ header form {
   color: #fff !important;
 }
 
+/* comment bubble */
 .bubble {
   position: relative;
   width: 580;
@@ -23,7 +24,6 @@ header form {
   border-radius: 10px;
   border: 1px solid #ccc;
 }
-
 .bubble:after {
   content: '';
   position: absolute;
@@ -37,7 +37,6 @@ header form {
   left: -15px;
   top: 50%;
 }
-
 .bubble:before {
   content: '';
   position: absolute;
@@ -52,21 +51,19 @@ header form {
   top: 50%;
 }
 
+/* comment */
 .comment-form .form-group {
   width: 90%;
 }
-
 .comment-form input[type="text"] {
   width: 100%;
   height: 75px;
   margin-bottom: 10px;
 }
-
 .comment-avatar img {
   width: 40px;
   margin-right: 5px;
 }
-
 .comment {
   border: 1px solid #ccc;
   border-raduis: 5px;
@@ -76,23 +73,23 @@ header form {
   width: 100%;
 }
 
+/* friends */
 .friends li {
   list-style: none;
   display: inline;
   padding: 0 10px 0 10px;
   float: left;
 }
-
 .friends img {
   width: 55px;
 }
 
+/* groups */
 .groups img {
   width: 80px;
   float: left;
   margin-right: 15px;
 }
-
 .group-item {
   padding-bottom: 10px;
   margin-bottom: 6px;
