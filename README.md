@@ -1,5 +1,7 @@
-### My basic Bootstrap template
+### Social Network Mockup
 
 ---
 
-Currently using v3.3.6.
+A mock of a social network (loosely modeled after a certain one based in Menlo Park).
+
+An exercise in creating user interfaces.
